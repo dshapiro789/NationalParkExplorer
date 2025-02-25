@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  select {
+    background-image: none;
+  }
+  
+  select option {
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+  }
+  
+  select option:first-child {
+    color: #6B7280;
+  }
+  
+  select:focus option:checked {
+    background: #10B981;
+    color: white;
+  }
+}
